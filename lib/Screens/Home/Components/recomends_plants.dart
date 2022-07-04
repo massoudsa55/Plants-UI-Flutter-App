@@ -1,10 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:plants_ui_flutter_app/Screens/Details/details_screen.dart';
 import 'package:plants_ui_flutter_app/constants.dart';
 
 class RecomendsPlants extends StatelessWidget {
   const RecomendsPlants({
     Key? key,
   }) : super(key: key);
+
+  void goToDetailsScreen(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => const DetailsScreen(),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -17,21 +27,21 @@ class RecomendsPlants extends StatelessWidget {
             title: "Samantha",
             country: "Algeria",
             price: 450,
-            press: () {},
+            press: () => goToDetailsScreen(context),
           ),
           RecomendPlanCard(
             image: "assets/images/image_2.png",
             title: "Samantha",
             country: "Algeria",
             price: 450,
-            press: () {},
+            press: () => goToDetailsScreen(context),
           ),
           RecomendPlanCard(
             image: "assets/images/image_3.png",
             title: "Samantha",
             country: "Algeria",
             price: 450,
-            press: () {},
+            press: () => goToDetailsScreen(context),
           ),
         ],
       ),

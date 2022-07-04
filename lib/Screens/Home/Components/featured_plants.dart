@@ -54,7 +54,7 @@ class FeaturedPlantCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           image: DecorationImage(
             image: AssetImage(image),
-            fit: BoxFit.fill,
+            fit: BoxFit.cover,
           ),
         ),
       ),
