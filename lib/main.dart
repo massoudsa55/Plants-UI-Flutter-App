@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+	// For hide the widget of debuging
       debugShowCheckedModeBanner: false,
       title: 'Plants UI App',
       theme: ThemeData(
